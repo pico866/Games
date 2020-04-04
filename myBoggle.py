@@ -29,6 +29,11 @@ class myTrie(object):
 import time #for timer
 import sys #for kill
 
+dictionary = ["test","hat","hit","bee"]
+
+
+
+
 totalScores = 0
 
 def printScore():
@@ -37,12 +42,15 @@ def printScore():
 def main():
     print("--- Boggle Game ---")
     root = myTrie()
-    dictionary = ["test","hat","hit","bee"]
+    
     for w in dictionary:
         root.add(w)
    
     import time
     timeout = time.time() + 10   # sec
     while time.time() < timeout:
-        guessWord = input("Enter your word")
+        guessWord = input("Enter your word:  ")
         print ("You entered %s",guessWord)
+      
+if __name__ == "__main__":
+    main()
