@@ -77,7 +77,6 @@ import sys #for kill
 from nltk.corpus import words
 dictionary = words.words()
 
-
 totalScores = 0
 
 def printScore():
@@ -103,7 +102,7 @@ def main():
             print("BINGO!!")
         else:
             print("NOT!!!")
-            
+
     printScore()
       
 if __name__ == "__main__":
