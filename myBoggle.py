@@ -77,6 +77,11 @@ import sys #for kill
 from nltk.corpus import words
 dictionary = words.words()
 
+dictionary = ["test","hat","hit","bee"]
+
+
+
+
 totalScores = 0
 
 def printScore():
@@ -98,12 +103,15 @@ def main():
     while time.time() < timeout:
         guessWord = input("Enter your word:  ")
         print ("You entered %s",guessWord)
+<<<<<<< HEAD
         if guessWord in dictionary:
             print("BINGO!!")
         else:
             print("NOT!!!")
 
     printScore()
+=======
+>>>>>>> 7efe2e5659a968506eed136b97dc4199a90452a8
       
 if __name__ == "__main__":
     main()
